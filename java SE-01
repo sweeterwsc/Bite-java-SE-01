@@ -1,0 +1,109 @@
+package bite01;
+
+// 类名使用大驼峰 TestDemo
+public class Test {
+    public static void main(String[] args) {
+
+        // short：2个字节
+        // int：4个字节,和操作系统没有关系
+//        int a = 10;
+//        System.out.println(a);
+//        // Integer : int的plus版本,包装类
+//        System.out.println(Integer.MAX_VALUE);
+//        System.out.println(Integer.MIN_VALUE);
+        // long：8个字节
+//        long b = 12L;
+//        System.out.println(b);
+//        System.out.println(Long.MAX_VALUE);
+//        System.out.println(Long.MIN_VALUE);
+        // long a = 10L;
+        // double：8个字节
+        // float：4个字节
+//        float f = 1.2f;
+//        System.out.println(f);
+
+        // char：2个字节！！！！！
+//        char c = 'c';
+//        char d = '特';
+//        char a = 97;
+//        System.out.println(c);// c
+//        System.out.println(d);// 特
+//        System.out.println(a);// a
+
+//        // byte：1个字节   -128 ~ 127
+//        byte b = 10;
+//        System.out.println(b);
+//        // byte y = 130;// 错误，超出范围了
+
+    }
+}
+
+
+public class Test02 {
+    public static void main(String[] args) {
+        // 变量命名:字母 数字 下划线 美元符号 =====> 小驼峰
+        // (程序运行的过程中可以改变)：在程序运行时确定值
+        // final常量：程序运行中不能修改的量(建议大写):在程序编译时已经确定值了（只能初始化一次）
+//        int a = 12;
+//        {
+//            a = 99;
+//        }
+//        System.out.println(a);
+//
+//        long L = 123243;
+//        int c = (int)L;// 强转，否则报错(有风险)
+//
+//        // 当两种数据不是同一种类型时，强转也不能
+//        boolean b = true;
+//        //int n = (int)b;// 报错
+
+//        byte a = 1;
+//        byte b = 2;
+//        //byte c = a + b;// 报错：a和b在参与运算时，会转为int，相加的结果为int，需要强转才能赋值给c
+//        byte c = (byte)(a + b);
+//        byte c2 = 1+2;// 1和2都是常量，在程序编译时，右边已经变成3了=====>byte c2 = 3;
+
+
+//        String str = "Hello";System.out.println(str);// hello
+//        System.out.println("\"bite\"");
+//        // 注意：其他字符串和字符串拼接，结果为字符串
+//        System.out.println("hello "+"world");// hello world
+//        // 其他字符串和数字拼接，结果为字符串
+//        System.out.println("hello "+10+20);// hello 1020
+//        // 计算机从左到右，运算，先算10+20，再拼接
+//        System.out.println(10+20+"hello");// 30 hello
+//        System.out.println("hello"+(10+20));// hello30
+//        System.out.println(10+""+20+"hello");//1020hello
+//        System.out.println(10+20+"hello");// 30hello
+
+
+        // int 和 String 的相互转换
+        int num = 10;
+        String str = String.valueOf(num);
+        System.out.println(str);
+
+        String str2 = "123";
+        int num2 = Integer.valueOf(str2);
+        System.out.println(num2);
+        // 只有成员变量有默认值，局部变量必须初始化
+
+        short s = 10;
+        s = (short)(s + 9);
+        s += 9;// 自动进行强制类型转换
+
+        // 关系运算符：== != < > <= >=结果为布尔值
+       //表达式1 && 表达式2（两个表达式均为布尔类型）=====> 如果表达式1为假，就不再执行2
+       //表达式1 || 表达式2（两个表达式均为布尔类型）=====> 如果表达式1为真，就不再执行2
+
+        //&：按位与  |：按位或  ^：按位异或  ~：按位取反
+
+        // 移位运算符
+        //<< 左移:0000 1011  <<1 ----> 0001 0110
+        //>> 右移:0000 1011  >>1 ----> 0000 0101(补符号位)
+        //>>> 无符号右移:1111 1111 >>>1 ----> 0111 1111(补0)
+
+        // 条件运算符：   表达式1 ? 表达式2 : 表达式3（1为真返回2，为假返回3）
+        //             这里的表达式为布尔类型
+    }
+
+}
