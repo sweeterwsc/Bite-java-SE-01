@@ -1,0 +1,100 @@
+package bite02;
+import java.util.Scanner;
+
+public class Test01 {
+
+    public static void main(String[] args) {
+        int n =1;
+        while (n <= 100){
+            if(n % 3 == 0  && n % 5 == 0) {
+                System.out.println(n);
+                n++;
+                continue;
+            }
+            n++;
+        }
+    }
+
+//    public static void main6(String[] args) {
+//        int i = 1;
+//        while(i <= 10){
+//            if(i % 3 != 0){
+//                i++;
+//                continue;
+//            }
+//            System.out.println(i);
+//            i++;
+//        }
+//        // 1.安装环境。告诉你要装啥，环境自己配
+//        // 2.会让你看公司的代码。公司代码的风格
+//        // 3.尝试让你完成边边角角的东西。看你代码怎么样？风格、规范
+//    }
+
+//    public static void main6(String[] args) {
+//        int n = 5;
+//        int i = 1;
+//        int ret = 1;
+//        while (i <= n){
+//            ret *= i;
+//            i++;
+//        }
+//    }
+
+//    public static void main5(String[] args) {
+//        int i = 1;
+//        int sum = 0;// 只要打了断点，程序就开始执行了，只不过停留在打断点的一行
+//        while(i <= 10){
+//            sum += i;
+//            i++;
+//        }
+//        System.out.println(sum);
+//    }
+
+//// java中不能做switch参数类型的是：
+//    // 1. long    2. float     3. double     4. boolean
+//    public static void main4(String[] args) {
+//        int a = 10;
+//        switch (a){
+//            case 1:
+//                System.out.println("1");
+//                break;
+//            case 2:
+//                System.out.println("2");
+//                break;
+//            default:
+//                System.out.println("不匹配");
+//                break;
+//        }
+//        // break不能遗漏
+//    }
+
+//    public static void main3(String[] args) {
+//        // 1.首先是代码的可阅读性（注释、风格、必要的括号不能省）
+//        // 2.其次是效率
+//        int year = 2000;
+//        if((year % 100 != 0  && year%4 == 0) ||  year%400 == 0){
+//            System.out.println("是闰年！");
+//        }else{
+//            System.out.println("不是闰年！");
+//        }
+//    }
+
+//    public static void main2(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//        String str2 = scanner.nextLine();// 遇到
+//        System.out.println(str2);
+//        String str1 = scanner.next();// 遇到空格结束
+//        System.out.println(str1);
+//        //int n = 10;// 当确定n=10时，n%2 == 0 一定为true，报警告
+////        int n = scanner.nextInt();
+////        if(n % 2 == 0){// 表达式为布尔类型的
+////            System.out.println("偶数");
+////        }else {
+////            System.out.println("奇数");
+////        }
+//    }
+
+//    public static void main1(String[] args) {
+//        //if(布尔类型的表达式){ }
+//    }
+}
